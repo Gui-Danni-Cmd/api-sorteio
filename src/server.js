@@ -7,6 +7,7 @@ const port = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
+let test = new Date();
 
 app.post("/api/sorteo", async (req, res) => {
   const { nome, numSorteo, numInit, numEnd } = req.body;
@@ -16,5 +17,5 @@ app.post("/api/sorteo", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port} a ${test}`);
 });
