@@ -7,8 +7,8 @@ let horarioEnd = new Date("2023-12-09T22:00:00");
 async function sortear(nome, valorTotal, valorInit, valorFinal) {
   const numberFinal = await number.getAll();
   let horaHoraAtual = new Date();
-  let horarioInit = new Date("2023-12-10T16:00:00");
-  let horarioEnd = new Date("2023-12-10T16:50:00");
+  let horarioInit = new Date("2023-12-10T19:00:00");
+  let horarioEnd = new Date("2023-12-10T19:55:00");
   let value = [];
   if (horaHoraAtual < horarioEnd && horaHoraAtual > horarioInit) {
     for (let i = 1; i <= valorTotal; i++) {
